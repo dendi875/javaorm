@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--引用配置文件
+     resource 是类路径下的文件，类路径也就是编译后的 classes 根目录 target/classes 也就是类路径
+    -->
+    <properties resource="jdbc.properties" />
+
+    <!--设置日志-->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <!--声明别名-->
+    <typeAliases>
+        <!--
+           第一种语法格式：type的值为 java 类型的全限定名称（自定义类型）, alias 的值为自定义别名
+           优点：别名可以自定义
+           缺点：需要为每个类单独定义别名
+           第二种方法： 使用  package，mybatis 会把这个包中的所有类名当作别名（不区别大小写），而且可以写多个
+           优点：使用方便，一次可以给多个类定义别名
+           缺点：别名不能自定义，必须是类名，不同包的同名类会有冲突
+           一般情况下我们就使用全限定名称，不使用别名
+        -->
+        <typeAlias type="com.zq.entity.Student" alias="Student"></typeAlias>
+        <package name="com.zq.vo"/>
+    </typeAliases>
+
+    <!-- 加入分页插件 -->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
+    </plugins>    
+    
+    <!--
+        environments 环境标签，在里面可以配置多个 environment
+        environment：表示一个数据库的连接信息
+        id: 自定义环境的标识，唯一值
+    -->
+    <environments default="test">
+        <environment id="dev">
+            <transactionManager type="JDBC"/>
+            <!--配置数据源，使用是创建连接对象 Connection-->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://www.myvbox.com:3306/mybatis?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=true"/>
+                <property name="username" value="root"/>
+                <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+
+        <environment id="test">
+            <transactionManager type="JDBC"/>
+            <!--配置数据源，使用是创建连接对象 Connection-->
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}" />
+                <property name="url" value="${jdbc.url}" />
+                <property name="username" value="${jdbc.username}" />
+                <property name="password" value="${jdbc.password}" />
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--
+    指定其它 mapper 文件的位置，
+    目的：找到其它文件的 sql 语句，
+    resource: 路径是从 target/classes 路径开始找
+    一个 mapper resource 指定一个 Mapper 文件
+    -->
+    <mappers>
+        <!--使用相对于类路径的资源引用-->
+         <mapper resource="mybatis/mapper/StudentMapper.xml"/>
+
+        <!--
+        使用 mapper 接口所在的包名
+        它有要求的：mapper xml 文件与 mapper 接口要在同一目录，并且 mapper xml 文件名要与 mapper 接口在一致
+        -->
+        <!--<package name="com.zq.mapper"/>-->
+    </mappers>
+</configuration>

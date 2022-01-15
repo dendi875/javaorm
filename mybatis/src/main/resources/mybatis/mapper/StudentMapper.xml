@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zq.mapper.StudentMapper">
+    <select id="getOne" resultType="com.zq.entity.Student">
+        select * from student where id = #{id}
+    </select>
+
+    <select id="getAll" resultType="com.zq.entity.Student">
+        select * from student
+    </select>
+    <!--
+        如果传入给 mybatis 是一个 java 对象，可以使用 #{属性名} 的方式，来获取属性的值，属性值会放入点位符位置
+        这里 mybatis 执行些属性的 getXXX()
+    -->
+    <insert id="insert">
+        insert into student (`name`, `email`, `age`) values(#{name}, #{email}, #{age})
+    </insert>
+
+    <!--
+        parameterType ： dao（mapper）接口中方法参数的数据类型。
+        parameterType它的值是java的数据类型全限定名称或者是mybatis定义的别名
+        例如：parameterType="java.lang.Integer" 或 parameterType="int" 告诉 mybatis 我们传入的参数是一个整型
+
+        mybatis 执行的 sql 语句，select * from student where id = ?
+        ？是点位符，使用  jdbc 中的 PreparedStatement 来执行如下语句，
+        String sql="select * from student where id = ?";
+         PreparedStatement pst = conn.preparedStatement(sql);
+        parameterType 如果是 Integer 就执行 pst.setInt(1, 5);
+        parameterType 如果是 String 就执行 pst.setString(1, "5");
+
+        注意：
+        1. parameterType不是强制的，mybatis通过反射机制能够发现 mapper 接口参数的数类型。所以可以没有。 一般我们也不写。
+        2. 使用#{}之后， mybatis执行sql是使用的jdbc中的PreparedStatement对象
+    -->
+    <select id="selectStudentById" resultType="com.zq.entity.Student" parameterType="java.lang.Integer">
+        select * from student where id = #{id}
+    </select>
+    <select id="selectByEmail" resultType="com.zq.entity.Student" parameterType="string">
+        select * from student where id = #{studentEmail}
+    </select>
+
+    <!--
+        多个简单参数的例子
+        当使用了 @Param 命名后，在 mapper 文件中要使用  #{命名参数}
+     -->
+    <select id="selectMultiParam" resultType="com.zq.entity.Student">
+        select * from student where name = #{myname} or age = #{myage}
+    </select>
+
+    <!--
+       当有多个参数时，我们想到把多个参数封装成一个对象，所以使用 一个对象作为参数，方法的形参是一个 java 对象
+       我们使用 对象的属性值作为参数使用
+       简单使用：#{属性名}
+    -->
+    <select id="selectMultiStudent" resultType="com.zq.entity.Student">
+        select * from student where name = #{name} or age = #{age}
+    </select>
+
+    <!--
+     多参数的完整的语法格式：
+       https://mybatis.org/mybatis-3/zh/sqlmap-xml.html#Parameters
+     #{property,javaType=java中的数据类型名,jdbcType=数据类型名}
+    -->
+    <select id="selectMultiStudent2" resultType="com.zq.entity.Student">
+        select * from student where
+        name = #{name,javaType=java.lang.String,jdbcType=VARCHAR}
+        or
+        age = #{age,javaType=java.lang.Integer,jdbcType=INTEGER}
+    </select>
+
+    <!--
+      我们不使用 Student 对象，使用其它对象怎么玩呢？
+    -->
+    <select id="selectByQueryParam" resultType="com.zq.entity.Student">
+        select * from student where name = #{p1} or age = #{p2}
+    </select>
+
+
+    <!--
+    按位置传参数
+    参数位置从  0 开始，引用参数语法 #{arg 位置}，第一个参数的是 #{arg0}，第二个参数是 #{arg1}
+     -->
+    <select id="selectByArg" resultType="com.zq.entity.Student">
+        select * from student where name = #{arg0} or age = #{arg1}
+    </select>
+
+    <!--
+    使用 map 传参，获取  map 的值，是通过 key 获取的，#{key}
+    -->
+    <select id="selectByMap" resultType="com.zq.entity.Student">
+        select * from student where name = #{name} or age = #{age}
+    </select>
+
+    <!--
+    使用 ${} 把查询出来的数据按 id 列排序，如果使用 #{} 是不行的，因为变成了 "id" 字符串
+    -->
+    <select id="selectStudentOrderByColName" resultType="com.zq.entity.Student">
+        select * from ${tableName} order by ${colName} desc
+    </select>
+
+
+    <!--
+        封装 Mybatis 输出结果  resultType、resultMap
+
+        resultType：我们执行 sql 得到的是 ResultSet ，需要把 ResultSet 转为我们的 java 对象
+        注意如果返回的是集合，那应该设置为集合包含的类型，而不是集合本身，resultType 和  resultMap 不能同时使用
+
+        resultType 在执行 select 时使用，表示结果类型，mysql 执行 sql 语句，得到的 java 对象类型，它的值
+        有两种，一种是 java类型的完全限定名，别一种是别名
+
+        resultType="com.zq.entity.Student"
+        1. 调用  com.zq.entity.Student 的无参构造方法，创建对象
+        Student s = new Student();
+        2. 同名的列赋值给同名的属性 s.setId(rs.getInt("id)); s.setName(rs.getString("name))
+        3. 得到 JAVA 对象，如果返回的是 list 集合，mybatis 把 students 对象放入 List 集合中
+    -->
+
+    <!--
+        自定义别名：mybatis 提供的对 java 类型定义简短、好记的名称
+        自定义别名步骤：
+        1. 在 mybatis 主配置文件中做，使用 typeAliases 标签声明别名，写在 <settings> 后面
+        2. 在 mapper 文件中，resultType="别名"
+    -->
+    <select id="selectTypeAliasesById" resultType="Student">
+        select * from student where id = #{id}
+    </select>
+
+    <!--
+    resultType 不一定就是实体类对象，它其实是一个自定义对象，有属性，有 get，set 方法就行，只不过我们为了方便一般情况下就使用实体类对象
+    -->
+    <select id="selectCustomObjectById" resultType="com.zq.vo.CustomObject">
+        select * from student where id = #{cid}
+    </select>
+
+    <!--
+    resultType 返回简单类型
+    -->
+    <select id="count" resultType="java.lang.Long">
+        select count(*) from student
+    </select>
+
+    <!--
+    resultType 返回 Map 结构，Map 的 key 是列名，value 是列名的值
+    sql 的查询结果作为 Map 的 key 和 value。推荐使用 Map<Object, Object>
+    注意：Map 作为接口返回值，sql 语句的查询结果最多只能有一条记录，大于一条记录会出错
+
+    resultType="java.util.HashMap" 可以写成别名 resultType="hashmap"
+    -->
+    <select id="selectReturnMap" resultType="java.util.HashMap">
+        select  * from student where id = #{id}
+    </select>
+
+
+    <!--
+    resultMap 可以自定义 sql 的结果和 java 对象属性的映射关系，更灵活的把列值赋值给指定属性，  常用到列名和 java 对象属性名不一样的情况下。
+    用法：
+    1. 先定义  resultMap 标签，指定列名和属性名的对应关系。id 值是给 select 标签用的，type 是自定义的 java 对象的全限定名称
+    2. 在 select 标签中使用 resultMap 属性，指定上面定义的  resultMap 的 id 值
+    -->
+    <resultMap id="customMap" type="com.zq.vo.CustomObject">
+        <!--
+          1. 定义列名和属性名的对应关系
+          2. 主键列需要使用id标签
+          3. 非主键列需要使用 result 标签
+          4. 如果列名和属性名相同，可以不用配置
+        -->
+        <id column="id" property="cid"/>
+        <result column="name" property="cname"/>
+    </resultMap>
+    <select id="selectResultMap" resultMap="customMap">
+        select * from student where id = #{sid}
+    </select>
+
+    <!-- 使用 resultType + as 来解决列名和属性名不一样的问题 -->
+    <select id="selectResultTypeCustomObject"  resultType="com.zq.vo.CustomObject">
+        select id as cid, name as cname, email, age  from student where id = #{sid}
+    </select>
+
+    <!--
+        like 查询的第一种方式，在java 代码中提供要查询的值 "%qq.com%"
+    -->
+    <select id="selectLikeFirst"  resultType="com.zq.entity.Student">
+        select * from student where email like #{email}
+    </select>
+
+
+    <!--
+    like 查询的第二种方式 "%" 空格 #{xx} 空格 "%"
+    -->
+    <select id="selectLikeSecond"  resultType="com.zq.entity.Student">
+        select * from student where email like "%" #{email} "%"
+    </select>
+
+    <!--   动态 sql           -->
+    <!--
+        if 标签：当 test 为 true 时，会将其包含的 sql 片段拼接到其所在的 sql 语句中
+        test: 要使用对象的属性值来做来判断条件
+
+        <if test="条件">
+        sql 语句的部分
+        </if>
+    -->
+    <select id="selectIf" resultType="com.zq.entity.Student">
+        select * from student where id = -1
+        <if test="email != null and email != '' ">  <!-- 这个 name 代表的是 Student 这个对象的 name 属性名所对应的值 -->
+            and email like #{email}
+        </if>
+        <if test="age > 0">
+            and age &gt;= #{age}
+        </if>
+    </select>
+
+    <!--
+        if 标签一般来配合 where 标签来使用
+    -->
+    <select id="selectWhere" resultType="com.zq.entity.Student">
+        select * from student
+        <where>
+            <if test="email != null and email != '' ">  <!-- 这个 name 代表的是 Student 这个对象的 name 属性名所对应的值 -->
+                and email like #{email}
+            </if>
+            <if test="age > 0">
+                and age &gt;= #{age}
+            </if>
+        </where>
+    </select>
+
+    <!--
+       foreach 标签，用于实现对于数组、集合的遍历。
+       collection 表示要遍历的集合类型，list , array 等，如果 mapper 接口方法中的形参是数组，则这个  collection 值为 array，如果形参是集合，则为 list
+       open 表示开始的字符
+       close 表示结束的字符
+       item 表示集合中的成员
+       separator 表示集合成员之间的分隔符
+    -->
+    <select id="selectForList" resultType="com.zq.entity.Student">
+        select * from student
+        <if test="list != null and list.size > 0">
+            where id in
+            <foreach collection="list" open="(" close=")" item="id" separator=",">
+                #{id}
+            </foreach>
+        </if>
+
+    </select>
+
+    <!--
+    foreach - 对象类型
+    -->
+    <select id="selectForList2" resultType="com.zq.entity.Student">
+        select * from student
+        <if test="list != null and list.size > 0">
+            where id in
+            <foreach collection="list" open="(" close=")" item="stu" separator=",">
+                #{stu.id}
+            </foreach>
+        </if>
+    </select>
+
+
+    <!--
+     sql 片段
+     <sql id="自定义的片段名称"></sql>
+    -->
+    <sql id="selectAllField">
+        select * from student
+    </sql>
+
+    <sql id="selectPartField">
+         id,name,email
+    </sql>
+
+    <select id="selectSql" resultType="com.zq.entity.Student">
+        <include refid="selectAllField"></include>
+        <if test="list != null and list.size > 0">
+            where id in
+            <foreach collection="list" open="(" close=")" item="stu" separator=",">
+                #{stu.id}
+            </foreach>
+        </if>
+    </select>
+
+    <select id="selectSql2" resultType="com.zq.entity.Student">
+       select <include refid="selectPartField"></include> from  student
+        <if test="list != null and list.size > 0">
+            where id in
+            <foreach collection="list" open="(" close=")" item="stu" separator=",">
+                #{stu.id}
+            </foreach>
+        </if>
+    </select>
+
+</mapper>
+
+<!--
+1. 约束文件 http://mybatis.org/dtd/mybatis-3-mapper.dtd
+约束文件作用：定义和限制当前文件中可以使用的标签和属性，以及标签出现的顺序
+
+2. mapper 是根标签，它有一个重要属性  namespace，必须有值，不能为空，一般为接口的全限定名称，当然可以执定使用字符串值
+作用：参与识别 SQL 语句的作用
+
+3. 在 mapper 标签里可以写 insert update delete select 标签，这些标签出现的次数和顺序是没有限制的
+注意：<select> 标签里的 select SQL 语句没有分号的
+
+<select> 标签：
+id ：要执行的 sql 语句的唯一标识，推荐使用 dao 接口中方法的名称
+resultType: 它只在 select 语句中使用，告诉 mybatis，执行 sql  语句，把数据赋值给哪个类型的 java 对象，使用的java对象的全限定名称
+
+
+#{id}：点位符，表示从 java 程序中传入过来的数据
+-->
