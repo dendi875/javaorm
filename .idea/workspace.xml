@@ -46,6 +46,7 @@
       <change afterPath="$PROJECT_DIR$/../../cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../cmake-build-debug/www.cbp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../gerrit.hupu.io/caesar-hpsfcore-msv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mybatis/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mybatis/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mybatis/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
@@ -64,6 +65,133 @@
       <change afterPath="$PROJECT_DIR$/mybatis/src/main/resources/mybatis/mapper/StudentMapper.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mybatis/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mybatis/src/test/java/com/zq/mapper/StudentMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatisplus/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatisplus/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatisplus/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatisplus/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatisplus/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatisplus/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatisplus/src/main/java/com/zq/MybatisplusApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatisplus/src/main/java/com/zq/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatisplus/src/main/java/com/zq/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatisplus/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-cat-simple/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-cat-simple/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-cat-simple/src/main/java/com/zq/SpringBootCatSimpleApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-cat-simple/src/main/java/com/zq/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-cat-simple/src/main/java/com/zq/service/CatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-cat-simple/src/main/java/com/zq/service/impl/CatServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-cat-simple/src/main/resources/META-INF/app.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-cat-simple/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-annotation/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-annotation/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-annotation/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-annotation/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-annotation/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-annotation/src/main/java/com/zq/SpringBootMybatisAnnotationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-annotation/src/main/java/com/zq/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-annotation/src/main/java/com/zq/enums/UserSexEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-annotation/src/main/java/com/zq/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-annotation/src/main/java/com/zq/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-annotation/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-annotation/src/test/java/com/zq/SpringBootMybatisAnnotationApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-annotation/src/test/java/com/zq/mapper/UserMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-annotation/users.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-xml/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-xml/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-xml/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-xml/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-xml/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-xml/src/main/java/com/zq/SpringBootMybatisXmlApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-xml/src/main/java/com/zq/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-xml/src/main/java/com/zq/enums/UserSexEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-xml/src/main/java/com/zq/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-xml/src/main/java/com/zq/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-xml/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-xml/src/main/resources/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-xml/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-xml/src/test/java/com/zq/SpringBootMybatisXmlApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-xml/src/test/java/com/zq/controller/UserControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-xml/src/test/java/com/zq/mapper/UserMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-mybatis-xml/users.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/Eureka-服务注册.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/Hystrix-熔断器.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/Zuul-网关.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-client-consumer-demo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-client-consumer-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-client-consumer-demo/src/main/java/com/zq/SpringCloudEurekaClientConsumerDemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-client-consumer-demo/src/main/java/com/zq/controller/ConsumerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-client-consumer-demo/src/main/java/com/zq/feign/HelloFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-client-consumer-demo/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-client-provider-demo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-client-provider-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-client-provider-demo/src/main/java/com/zq/SpringCloudEurekaClientProviderDemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-client-provider-demo/src/main/java/com/zq/controller/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-client-provider-demo/src/main/java/com/zq/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-client-provider-demo/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-client-provider2-demo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-client-provider2-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-client-provider2-demo/src/main/java/com/zq/SpringCloudEurekaClientProvider2DemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-client-provider2-demo/src/main/java/com/zq/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-client-provider2-demo/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-server-cluster/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-server-cluster/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-server-cluster/src/main/java/com/zq/SpringCloudEurekaServerClusterApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-server-cluster/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-server/src/main/java/com/zq/SpringCloudEurekaServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-eureka-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-consumer-node1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-consumer-node1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-consumer-node1/src/main/java/com/zq/SpringCloudHystrixConsumerNode1Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-consumer-node1/src/main/java/com/zq/controller/ConsumerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-consumer-node1/src/main/java/com/zq/feign/HelloFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-consumer-node1/src/main/java/com/zq/feign/fallback/HelloFeignClientFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-consumer-node1/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-consumer-node2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-consumer-node2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-consumer-node2/src/main/java/com/zq/SpringCloudHystrixConsumerNode2Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-consumer-node2/src/main/java/com/zq/controller/ConsumerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-consumer-node2/src/main/java/com/zq/feign/HelloFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-consumer-node2/src/main/java/com/zq/feign/fallback/HelloFeignClientFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-consumer-node2/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-dashboard-turbine/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-dashboard-turbine/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-dashboard-turbine/src/main/java/com/zq/SpringCloudHystrixDashboardTurbineApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-dashboard-turbine/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-dashboard/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-dashboard/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-dashboard/src/main/java/com/zq/SpringCloudHystrixDashboardApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-dashboard/src/main/java/com/zq/controller/ConsumerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-dashboard/src/main/java/com/zq/feign/HelloFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-dashboard/src/main/java/com/zq/feign/fallback/HelloFeignClientFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix-dashboard/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix/src/main/java/com/zq/SpringCloudHystrixApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix/src/main/java/com/zq/controller/ConsumerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix/src/main/java/com/zq/feign/HelloFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix/src/main/java/com/zq/feign/fallback/HelloFeignClientFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-hystrix/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-zuul-advanced/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-zuul-advanced/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-zuul-advanced/src/main/java/com/zq/SpringCloudZuulAdvancedApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-zuul-advanced/src/main/java/com/zq/fallback/ServiceProviderFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-zuul-advanced/src/main/java/com/zq/filter/TokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-zuul-advanced/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-zuul-simple-eureka/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-zuul-simple-eureka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-zuul-simple-eureka/src/main/java/com/zq/SpringCloudZuulSimpleEurekaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-zuul-simple-eureka/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-zuul-simple/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-zuul-simple/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-zuul-simple/src/main/java/com/zq/SpringCloudZuulSimpleApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/spring-cloud-zuul-simple/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hello-maven/src/main/java/com/zhangquan/commons/MyCode.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hello-maven/src/main/java/com/zhangquan/commons/MyStringUtils.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hello-maven/src/main/java/com/zhangquan/commons/MyStringUtils2.java" afterDir="false" />
@@ -326,98 +454,6 @@
       <change afterPath="$PROJECT_DIR$/../../rcp-phonecheck-msv/src/main/java/com/hupu/gdc/service/impl/NotifyBlackIndustryServiceMQImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../rcp-riskcontrol-api/src/main/java/com/rcp/risk/control/dto/ThesaurusBlackWordLimitDTO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../rcp-riskcontrol-api/src/main/java/com/rcp/risk/control/vo/ThesaurusVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-boot-study/spring-boot-cat-simple/src/main/resources/META-INF/app.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-boot-study/spring-boot-mybatis-annotation/src/main/java/com/zq/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-boot-study/spring-boot-mybatis-annotation/src/main/java/com/zq/enums/UserSexEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-boot-study/spring-boot-mybatis-annotation/src/main/java/com/zq/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-boot-study/spring-boot-mybatis-annotation/src/main/java/com/zq/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-boot-study/spring-boot-mybatis-annotation/src/test/java/com/zq/mapper/UserMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-boot-study/spring-boot-mybatis-annotation/users.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-boot-study/spring-boot-mybatis-xml/src/main/java/com/zq/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-boot-study/spring-boot-mybatis-xml/src/main/java/com/zq/enums/UserSexEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-boot-study/spring-boot-mybatis-xml/src/main/java/com/zq/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-boot-study/spring-boot-mybatis-xml/src/main/java/com/zq/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-boot-study/spring-boot-mybatis-xml/src/main/resources/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-boot-study/spring-boot-mybatis-xml/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-boot-study/spring-boot-mybatis-xml/src/test/java/com/zq/controller/UserControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-boot-study/spring-boot-mybatis-xml/src/test/java/com/zq/mapper/UserMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-boot-study/spring-boot-mybatis-xml/users.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/Eureka-服务注册.MD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/Hystrix-熔断器.MD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/Zuul-网关.MD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-client-consumer-demo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-client-consumer-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-client-consumer-demo/src/main/java/com/zq/SpringCloudEurekaClientConsumerDemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-client-consumer-demo/src/main/java/com/zq/controller/ConsumerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-client-consumer-demo/src/main/java/com/zq/feign/HelloFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-client-consumer-demo/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-client-provider-demo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-client-provider-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-client-provider-demo/src/main/java/com/zq/SpringCloudEurekaClientProviderDemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-client-provider-demo/src/main/java/com/zq/controller/ClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-client-provider-demo/src/main/java/com/zq/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-client-provider-demo/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-client-provider2-demo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-client-provider2-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-client-provider2-demo/src/main/java/com/zq/SpringCloudEurekaClientProvider2DemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-client-provider2-demo/src/main/java/com/zq/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-client-provider2-demo/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-server-cluster/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-server-cluster/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-server-cluster/src/main/java/com/zq/SpringCloudEurekaServerClusterApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-server-cluster/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-server/src/main/java/com/zq/SpringCloudEurekaServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-eureka-server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-consumer-node1/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-consumer-node1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-consumer-node1/src/main/java/com/zq/SpringCloudHystrixConsumerNode1Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-consumer-node1/src/main/java/com/zq/controller/ConsumerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-consumer-node1/src/main/java/com/zq/feign/HelloFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-consumer-node1/src/main/java/com/zq/feign/fallback/HelloFeignClientFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-consumer-node1/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-consumer-node2/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-consumer-node2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-consumer-node2/src/main/java/com/zq/SpringCloudHystrixConsumerNode2Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-consumer-node2/src/main/java/com/zq/controller/ConsumerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-consumer-node2/src/main/java/com/zq/feign/HelloFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-consumer-node2/src/main/java/com/zq/feign/fallback/HelloFeignClientFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-consumer-node2/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-dashboard-turbine/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-dashboard-turbine/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-dashboard-turbine/src/main/java/com/zq/SpringCloudHystrixDashboardTurbineApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-dashboard-turbine/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-dashboard/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-dashboard/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-dashboard/src/main/java/com/zq/SpringCloudHystrixDashboardApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-dashboard/src/main/java/com/zq/controller/ConsumerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-dashboard/src/main/java/com/zq/feign/HelloFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-dashboard/src/main/java/com/zq/feign/fallback/HelloFeignClientFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix-dashboard/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix/src/main/java/com/zq/SpringCloudHystrixApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix/src/main/java/com/zq/controller/ConsumerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix/src/main/java/com/zq/feign/HelloFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix/src/main/java/com/zq/feign/fallback/HelloFeignClientFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-hystrix/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-zuul-advanced/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-zuul-advanced/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-zuul-advanced/src/main/java/com/zq/SpringCloudZuulAdvancedApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-zuul-advanced/src/main/java/com/zq/fallback/ServiceProviderFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-zuul-advanced/src/main/java/com/zq/filter/TokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-zuul-advanced/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-zuul-simple-eureka/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-zuul-simple-eureka/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-zuul-simple-eureka/src/main/java/com/zq/SpringCloudZuulSimpleEurekaApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-zuul-simple-eureka/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-zuul-simple/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-zuul-simple/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-zuul-simple/src/main/java/com/zq/SpringCloudZuulSimpleApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-study/spring-cloud-zuul-simple/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../spring5-atguigu-study/spring5-aop1/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../spring5-atguigu-study/spring5-aop1/src/bean1.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../spring5-atguigu-study/spring5-aop1/src/bean2.xml" afterDir="false" />
@@ -1130,12 +1166,65 @@
       <change beforePath="$PROJECT_DIR$/../../../docker-compose.override.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../docker-compose.override.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../my.ini/xdebug.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../../../my.ini/xdebug.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_11_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_11_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_17_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_21_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_29.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatisplus/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatisplus/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatisplus/src/main/java/com/zq/MybatisplusApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatisplus/src/main/java/com/zq/MybatisplusApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatisplus/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mybatisplus/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatisplus/src/test/java/com/zq/MybatisplusApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatisplus/src/test/java/com/zq/MybatisplusApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../test.com/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../test.com/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -1167,7 +1256,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis/src/test/java/com/zq" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -1181,7 +1270,39 @@
       <recent name="$PROJECT_DIR$/mybatis" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StudentMapperTest.testPageHelper">
+  <component name="RunManager" selected="JUnit.MybatisplusApplicationTests.insert">
+    <configuration name="MybatisplusApplicationTests.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatisplus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zq" />
+      <option name="MAIN_CLASS_NAME" value="com.zq.MybatisplusApplicationTests" />
+      <option name="METHOD_NAME" value="insert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisplusApplicationTests.selectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatisplus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zq" />
+      <option name="MAIN_CLASS_NAME" value="com.zq.MybatisplusApplicationTests" />
+      <option name="METHOD_NAME" value="selectAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StudentMapperTest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis" />
       <extension name="coverage">
@@ -1209,38 +1330,6 @@
       <option name="PACKAGE_NAME" value="com.zq.mapper" />
       <option name="MAIN_CLASS_NAME" value="com.zq.mapper.StudentMapperTest" />
       <option name="METHOD_NAME" value="getAll2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentMapperTest.getOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zq.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zq.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.zq.mapper.StudentMapperTest" />
-      <option name="METHOD_NAME" value="getOne" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentMapperTest.getOneSelectOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zq.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zq.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.zq.mapper.StudentMapperTest" />
-      <option name="METHOD_NAME" value="getOneSelectOne" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -1278,11 +1367,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MybatisplusApplicationTests.insert" />
+        <item itemvalue="JUnit.MybatisplusApplicationTests.selectAll" />
         <item itemvalue="JUnit.StudentMapperTest.testPageHelper" />
         <item itemvalue="JUnit.StudentMapperTest.getAll2" />
         <item itemvalue="JUnit.StudentMapperTest.getAll" />
-        <item itemvalue="JUnit.StudentMapperTest.getOneSelectOne" />
-        <item itemvalue="JUnit.StudentMapperTest.getOne" />
       </list>
     </recent_temporary>
   </component>
@@ -1296,7 +1385,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642241699034</updated>
-      <workItem from="1642241703099" duration="1162000" />
+      <workItem from="1642241703099" duration="2206000" />
+      <workItem from="1642244120583" duration="65000" />
+      <workItem from="1642247977340" duration="4605000" />
     </task>
     <servers />
   </component>
@@ -1311,22 +1402,26 @@
       <screen x="0" y="23" width="1792" height="1059" />
     </state>
     <state x="496" y="218" key="#Project_Structure/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642242185039" />
-    <state width="1750" height="383" key="GridCell.Tab.0.bottom" timestamp="1642242435911">
-      <screen x="0" y="23" width="1792" height="1059" />
+    <state width="1460" height="161" key="GridCell.Tab.0.bottom" timestamp="1642383863315">
+      <screen x="-1920" y="-414" width="1920" height="1057" />
     </state>
-    <state width="1750" height="383" key="GridCell.Tab.0.bottom/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642242435911" />
-    <state width="1750" height="383" key="GridCell.Tab.0.center" timestamp="1642242435910">
-      <screen x="0" y="23" width="1792" height="1059" />
+    <state width="1460" height="161" key="GridCell.Tab.0.bottom/0.23.1792.1059/-1920.-414.1920.1057@-1920.-414.1920.1057" timestamp="1642383863315" />
+    <state width="1750" height="383" key="GridCell.Tab.0.bottom/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642244184868" />
+    <state width="1460" height="161" key="GridCell.Tab.0.center" timestamp="1642383863308">
+      <screen x="-1920" y="-414" width="1920" height="1057" />
     </state>
-    <state width="1750" height="383" key="GridCell.Tab.0.center/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642242435910" />
-    <state width="1750" height="383" key="GridCell.Tab.0.left" timestamp="1642242435909">
-      <screen x="0" y="23" width="1792" height="1059" />
+    <state width="1460" height="161" key="GridCell.Tab.0.center/0.23.1792.1059/-1920.-414.1920.1057@-1920.-414.1920.1057" timestamp="1642383863308" />
+    <state width="1750" height="383" key="GridCell.Tab.0.center/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642244184868" />
+    <state width="1460" height="161" key="GridCell.Tab.0.left" timestamp="1642383863307">
+      <screen x="-1920" y="-414" width="1920" height="1057" />
     </state>
-    <state width="1750" height="383" key="GridCell.Tab.0.left/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642242435909" />
-    <state width="1750" height="383" key="GridCell.Tab.0.right" timestamp="1642242435910">
-      <screen x="0" y="23" width="1792" height="1059" />
+    <state width="1460" height="161" key="GridCell.Tab.0.left/0.23.1792.1059/-1920.-414.1920.1057@-1920.-414.1920.1057" timestamp="1642383863307" />
+    <state width="1750" height="383" key="GridCell.Tab.0.left/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642244184867" />
+    <state width="1460" height="161" key="GridCell.Tab.0.right" timestamp="1642383863314">
+      <screen x="-1920" y="-414" width="1920" height="1057" />
     </state>
-    <state width="1750" height="383" key="GridCell.Tab.0.right/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642242435910" />
+    <state width="1460" height="161" key="GridCell.Tab.0.right/0.23.1792.1059/-1920.-414.1920.1057@-1920.-414.1920.1057" timestamp="1642383863314" />
+    <state width="1750" height="383" key="GridCell.Tab.0.right/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642244184868" />
     <state x="384" y="134" key="SettingsEditor" timestamp="1642242888640">
       <screen x="0" y="23" width="1792" height="1059" />
     </state>

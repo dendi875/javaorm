@@ -9,3 +9,8 @@
 最后，调用 close() 关闭
 这样就保证了 sqlSession 是方法内使用的局部变量
 
+4. SSM 的开发步骤
+* 接口中写抽象方法
+* XML或注解中写SQL
+* Service中调用接口
+* Controller中调用Service
