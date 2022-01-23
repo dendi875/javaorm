@@ -295,4 +295,104 @@ class MybatisplusApplicationTests {
 		List<User> users = userMapper.selectList(queryWrapper);
 		users.forEach(System.out::println);
 	}
+
+	@Test
+	public void setUserMapperAllEq() {
+		QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("name", "小红");
+		map.put("age", null);
+
+		queryWrapper.allEq(map, false);
+
+		List<User> users = userMapper.selectList(queryWrapper);
+		users.forEach(System.out::println);
+	}
+
+	@Test
+	public void setUserMapperAllEq2() {
+		QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("name", "小红");
+		map.put("age", 20);
+
+		queryWrapper.allEq(StringUtils.isNotBlank(map.get("name").toString()), (k, v) -> k.equals("name"), map, false);
+
+		List<User> users = userMapper.selectList(queryWrapper);
+		users.forEach(System.out::println);
+	}
+
+	/**
+	 * 使用场景1：不需要返回数据库全部字段，如果使用 selectList，则没有返回的字段会被设置成 null
+	 */
+	@Test
+	public void selectMaps1() {
+		QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+		queryWrapper.select("id", "name").eq("age", 31);
+		List<Map<String, Object>> maps = userMapper.selectMaps(queryWrapper);
+		maps.forEach(System.out::println);
+	}
+
+
+	/**
+	 * 使用场景2：在统计场景
+	 *
+	 *          *       按照直属上级分组，查询每组的 平均年龄、最小龄、最大年龄。
+	 *          *           并且只取年龄总和小于500的组。
+	 *          *               select
+	 *          *                   avg(age) avg_age,
+	 *          *                   min(age) min_age,
+	 *          *                   max(age) max_age
+	 *          *               from user
+	 *          *               group by manager_id --上级id分组
+	 *          *               having sum(age) <500 --只有总和小于500
+	 *
+	 */
+	@Test
+	public void selectMaps2() {
+		QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+		queryWrapper.select("avg(age) avg_age", "min(age) min_age", "max(age) max_age")
+				.groupBy("manager_id")
+				.having("sum(age) < {0}", 500);
+
+		List<Map<String, Object>> maps = userMapper.selectMaps(queryWrapper);
+		maps.forEach(System.out::println);
+	}
+
+	/**
+	 * 只返回第一列的值
+	 */
+	@Test
+	public void selectObjs() {
+		QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+		queryWrapper.like("name", "红");
+
+		List<Object> objects = userMapper.selectObjs(queryWrapper);
+		objects.forEach(System.out::println);
+	}
+
+
+	/**
+	 * 查询总记录数
+	 */
+	@Test
+	public void selectCount() {
+		QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+		queryWrapper.like("name", "红");
+
+		Integer count = userMapper.selectCount(queryWrapper);
+		System.out.println(count);
+	}
+
+	/**
+	 * 预期只返回一条记录的
+	 */
+	@Test
+	public void selectOne() {
+		QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+		queryWrapper.eq("name", "小张");
+
+		User user = userMapper.selectOne(queryWrapper);
+		System.out.println(user);
+	}
 }

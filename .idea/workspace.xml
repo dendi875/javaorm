@@ -46,34 +46,6 @@
       <change afterPath="$PROJECT_DIR$/../../cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../cmake-build-debug/www.cbp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../gerrit.hupu.io/caesar-hpsfcore-msv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis/src/main/java/com/zq/entity/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis/src/main/java/com/zq/mapper/StudentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis/src/main/java/com/zq/mapper/StudentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis/src/main/java/com/zq/mapper/impl/StudentMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis/src/main/java/com/zq/utils/MyBatisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis/src/main/java/com/zq/vo/CustomObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis/src/main/java/com/zq/vo/QueryParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis/src/main/resources/mybatis/mapper/StudentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis/src/test/java/com/zq/mapper/StudentMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatisplus/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatisplus/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatisplus/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatisplus/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatisplus/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatisplus/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatisplus/src/main/java/com/zq/MybatisplusApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatisplus/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatisplus/src/test/java/com/zq/MybatisplusApplicationTests.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spring-boot-study/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spring-boot-study/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-cat-simple/.gitignore" afterDir="false" />
@@ -1166,7 +1138,6 @@
       <change beforePath="$PROJECT_DIR$/../../../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../my.ini/xdebug.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../../../my.ini/xdebug.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatisplus/src/main/java/com/zq/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatisplus/src/main/java/com/zq/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatisplus/src/test/java/com/zq/MybatisplusApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatisplus/src/test/java/com/zq/MybatisplusApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../test.com/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../test.com/index.php" afterDir="false" />
     </list>
@@ -1226,8 +1197,8 @@
       <recent name="$PROJECT_DIR$/mybatis" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MybatisplusApplicationTests.setUserMapperEntity1">
-    <configuration name="MybatisplusApplicationTests.selectByCondition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MybatisplusApplicationTests.selectOne">
+    <configuration name="MybatisplusApplicationTests.selectCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatisplus" />
       <extension name="coverage">
         <pattern>
@@ -1237,13 +1208,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zq" />
       <option name="MAIN_CLASS_NAME" value="com.zq.MybatisplusApplicationTests" />
-      <option name="METHOD_NAME" value="selectByCondition" />
+      <option name="METHOD_NAME" value="selectCount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisplusApplicationTests.setUserMapper10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MybatisplusApplicationTests.selectMaps1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatisplus" />
       <extension name="coverage">
         <pattern>
@@ -1253,13 +1224,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zq" />
       <option name="MAIN_CLASS_NAME" value="com.zq.MybatisplusApplicationTests" />
-      <option name="METHOD_NAME" value="setUserMapper10" />
+      <option name="METHOD_NAME" value="selectMaps1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisplusApplicationTests.setUserMapper11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MybatisplusApplicationTests.selectMaps2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatisplus" />
       <extension name="coverage">
         <pattern>
@@ -1269,13 +1240,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zq" />
       <option name="MAIN_CLASS_NAME" value="com.zq.MybatisplusApplicationTests" />
-      <option name="METHOD_NAME" value="setUserMapper11" />
+      <option name="METHOD_NAME" value="selectMaps2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisplusApplicationTests.setUserMapperEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MybatisplusApplicationTests.selectObjs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatisplus" />
       <extension name="coverage">
         <pattern>
@@ -1285,13 +1256,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zq" />
       <option name="MAIN_CLASS_NAME" value="com.zq.MybatisplusApplicationTests" />
-      <option name="METHOD_NAME" value="setUserMapperEntity" />
+      <option name="METHOD_NAME" value="selectObjs" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisplusApplicationTests.setUserMapperEntity1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MybatisplusApplicationTests.selectOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatisplus" />
       <extension name="coverage">
         <pattern>
@@ -1301,7 +1272,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zq" />
       <option name="MAIN_CLASS_NAME" value="com.zq.MybatisplusApplicationTests" />
-      <option name="METHOD_NAME" value="setUserMapperEntity1" />
+      <option name="METHOD_NAME" value="selectOne" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -1323,11 +1294,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MybatisplusApplicationTests.setUserMapperEntity1" />
-        <item itemvalue="JUnit.MybatisplusApplicationTests.setUserMapperEntity" />
-        <item itemvalue="JUnit.MybatisplusApplicationTests.selectByCondition" />
-        <item itemvalue="JUnit.MybatisplusApplicationTests.setUserMapper11" />
-        <item itemvalue="JUnit.MybatisplusApplicationTests.setUserMapper10" />
+        <item itemvalue="JUnit.MybatisplusApplicationTests.selectOne" />
+        <item itemvalue="JUnit.MybatisplusApplicationTests.selectCount" />
+        <item itemvalue="JUnit.MybatisplusApplicationTests.selectObjs" />
+        <item itemvalue="JUnit.MybatisplusApplicationTests.selectMaps2" />
+        <item itemvalue="JUnit.MybatisplusApplicationTests.selectMaps1" />
       </list>
     </recent_temporary>
   </component>
@@ -1345,7 +1316,7 @@
       <workItem from="1642244120583" duration="65000" />
       <workItem from="1642247977340" duration="4605000" />
       <workItem from="1642384386773" duration="1568000" />
-      <workItem from="1642598599239" duration="15738000" />
+      <workItem from="1642598599239" duration="18838000" />
     </task>
     <servers />
   </component>
@@ -1360,26 +1331,30 @@
       <screen x="0" y="23" width="1792" height="1059" />
     </state>
     <state x="496" y="218" key="#Project_Structure/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642242185039" />
-    <state width="1878" height="196" key="GridCell.Tab.0.bottom" timestamp="1642855747206">
-      <screen x="-1920" y="-414" width="1920" height="1057" />
+    <state width="1750" height="328" key="GridCell.Tab.0.bottom" timestamp="1642944318287">
+      <screen x="0" y="23" width="1792" height="1059" />
     </state>
     <state width="1878" height="196" key="GridCell.Tab.0.bottom/0.23.1792.1059/-1920.-414.1920.1057@-1920.-414.1920.1057" timestamp="1642855747206" />
     <state width="1750" height="383" key="GridCell.Tab.0.bottom/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642244184868" />
-    <state width="1878" height="196" key="GridCell.Tab.0.center" timestamp="1642855747205">
-      <screen x="-1920" y="-414" width="1920" height="1057" />
+    <state width="1750" height="328" key="GridCell.Tab.0.bottom/0.23.1792.1059@0.23.1792.1059" timestamp="1642944318287" />
+    <state width="1750" height="328" key="GridCell.Tab.0.center" timestamp="1642944318286">
+      <screen x="0" y="23" width="1792" height="1059" />
     </state>
     <state width="1878" height="196" key="GridCell.Tab.0.center/0.23.1792.1059/-1920.-414.1920.1057@-1920.-414.1920.1057" timestamp="1642855747205" />
     <state width="1750" height="383" key="GridCell.Tab.0.center/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642244184868" />
-    <state width="1878" height="196" key="GridCell.Tab.0.left" timestamp="1642855747205">
-      <screen x="-1920" y="-414" width="1920" height="1057" />
+    <state width="1750" height="328" key="GridCell.Tab.0.center/0.23.1792.1059@0.23.1792.1059" timestamp="1642944318286" />
+    <state width="1750" height="328" key="GridCell.Tab.0.left" timestamp="1642944318286">
+      <screen x="0" y="23" width="1792" height="1059" />
     </state>
     <state width="1878" height="196" key="GridCell.Tab.0.left/0.23.1792.1059/-1920.-414.1920.1057@-1920.-414.1920.1057" timestamp="1642855747205" />
     <state width="1750" height="383" key="GridCell.Tab.0.left/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642244184867" />
-    <state width="1878" height="196" key="GridCell.Tab.0.right" timestamp="1642855747206">
-      <screen x="-1920" y="-414" width="1920" height="1057" />
+    <state width="1750" height="328" key="GridCell.Tab.0.left/0.23.1792.1059@0.23.1792.1059" timestamp="1642944318286" />
+    <state width="1750" height="328" key="GridCell.Tab.0.right" timestamp="1642944318287">
+      <screen x="0" y="23" width="1792" height="1059" />
     </state>
     <state width="1878" height="196" key="GridCell.Tab.0.right/0.23.1792.1059/-1920.-414.1920.1057@-1920.-414.1920.1057" timestamp="1642855747206" />
     <state width="1750" height="383" key="GridCell.Tab.0.right/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642244184868" />
+    <state width="1750" height="328" key="GridCell.Tab.0.right/0.23.1792.1059@0.23.1792.1059" timestamp="1642944318287" />
     <state x="-1509" y="-303" key="SettingsEditor" timestamp="1642847613929">
       <screen x="-1920" y="-414" width="1920" height="1057" />
     </state>
@@ -1393,6 +1368,10 @@
       <screen x="-1920" y="-414" width="1920" height="1057" />
     </state>
     <state x="-842" y="-126" key="extract.method.dialog/0.23.1792.1059/-1920.-414.1920.1057@-1920.-414.1920.1057" timestamp="1642847300203" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1642944152065">
+      <screen x="0" y="23" width="1792" height="1059" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.23.1792.1059@0.23.1792.1059" timestamp="1642944152064" />
     <state x="273" y="175" key="new project wizard" timestamp="1642242880109">
       <screen x="0" y="23" width="1792" height="1059" />
     </state>
