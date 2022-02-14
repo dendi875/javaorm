@@ -12,8 +12,8 @@
         select * from student
     </select>
     <!--
-        如果传入给 mybatis 是一个 java 对象，可以使用 #{属性名} 的方式，来获取属性的值，属性值会放入点位符位置
-        这里 mybatis 执行些属性的 getXXX()
+        如果传入给 mybatis 是一个 java 对象，可以使用 #{属性名} 的方式，来获取属性的值，属性值会放入占位符位置
+        这里 mybatis 执行这些属性的 getXXX()
     -->
     <insert id="insert">
         insert into student (`name`, `email`, `age`) values(#{name}, #{email}, #{age})

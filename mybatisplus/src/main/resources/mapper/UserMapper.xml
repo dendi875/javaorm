@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zq.mapper.UserMapper">
+    <select id="selectAll2" resultType="com.zq.entity.User">
+        <!--参数的注解是固定的 ew 就是  WRAPPER 的值-->
+        select * from mp_user ${ew.customSqlSegment}
+    </select>
+
+    <select id="selectMyPage" resultType="com.zq.entity.User">
+        <!--没有什么变化，但是可以多表联查-->
+        select *
+        from mp_user ${ew.customSqlSegment}
+    </select>
+</mapper>

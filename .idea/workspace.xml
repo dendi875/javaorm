@@ -46,6 +46,9 @@
       <change afterPath="$PROJECT_DIR$/../../cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../cmake-build-debug/www.cbp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../gerrit.hupu.io/caesar-hpsfcore-msv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatisplus/src/main/java/com/zq/config/MyBatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatisplus/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatisplus/src/test/java/com/zq/MybatisplusUpdateTests.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spring-boot-study/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spring-boot-study/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-cat-simple/.gitignore" afterDir="false" />
@@ -421,10 +424,30 @@
       <change afterPath="$PROJECT_DIR$/../../rcp-contentreview-msv/rcp-contentreview-web/src/test/java/com/hupu/rcp/textreview/mapper/ThesaurusMapperTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../rcp-contentreview-msv/rcp-contentreview-web/src/test/java/com/hupu/rcp/textreview/service/ThesaurusServiceTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../rcp-contentreview-msv/rcp-contentreview-web/src/test/java/com/hupu/rcp/textreview/web/LinkSuggestionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-loginverification-job/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-loginverification-job/src/main/java/com/hupu/rcp/common/enums/YazxIpRiskLevelEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-loginverification-job/src/main/java/com/hupu/rcp/constants/HighRiskUserEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-loginverification-job/src/main/java/com/hupu/rcp/constants/HighRiskUserStatusConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-loginverification-job/src/main/java/com/hupu/rcp/handler/RiskAnalysisStatisticsHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-loginverification-job/src/main/java/com/hupu/rcp/handler/iml/RedisStatisticsHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-loginverification-job/src/main/java/com/hupu/rcp/mapper/ds1/HighRiskUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-loginverification-job/src/main/java/com/hupu/rcp/po/HighRiskUserDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-loginverification-job/src/main/java/com/hupu/rcp/utils/NetUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-loginverification-job/src/main/resources/mapper/ds1/HighRiskUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-loginverification-job/src/test/java/com/hupu/rcp/service/HighRiskUserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-loginverification-job/src/test/java/com/hupu/rcp/utils/NetUtilTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../rcp-phonecheck-msv/src/main/java/com/hupu/gdc/service/NotifyBlackIndustryService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../rcp-phonecheck-msv/src/main/java/com/hupu/gdc/service/impl/NotifyBlackIndustryServiceMQImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../rcp-riskcontrol-api/src/main/java/com/rcp/risk/control/dto/ThesaurusBlackWordLimitDTO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../rcp-riskcontrol-api/src/main/java/com/rcp/risk/control/vo/ThesaurusVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-riskcontrol-job/src/main/java/com/risk/bbs/common/enums/HighRiskUserSourceEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-riskcontrol-job/src/main/java/com/risk/bbs/config/KafkaHighRiskUserConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-riskcontrol-job/src/main/java/com/risk/bbs/config/KafkaMetisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-riskcontrol-job/src/main/java/com/risk/bbs/dto/RedisHighRiskUserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-riskcontrol-job/src/main/java/com/risk/bbs/handler/HackingHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-riskcontrol-job/src/main/java/com/risk/bbs/handler/impl/HighRiskHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-riskcontrol-job/src/main/java/com/risk/bbs/listener/KafkaHighRiskUserConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rcp-riskcontrol-job/ " afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../spring5-atguigu-study/spring5-aop1/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../spring5-atguigu-study/spring5-aop1/src/bean1.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../spring5-atguigu-study/spring5-aop1/src/bean2.xml" afterDir="false" />
@@ -1138,7 +1161,9 @@
       <change beforePath="$PROJECT_DIR$/../../../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../my.ini/xdebug.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../../../my.ini/xdebug.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatisplus/src/test/java/com/zq/MybatisplusApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatisplus/src/test/java/com/zq/MybatisplusApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/resources/mybatis/mapper/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/src/main/resources/mybatis/mapper/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatisplus/src/main/java/com/zq/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatisplus/src/main/java/com/zq/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatisplus/src/test/java/com/zq/MybatisplusApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatisplus/src/test/java/com/zq/MybatisplusSelectTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../test.com/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../test.com/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1149,6 +1174,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
+        <option value="mybatis-mapper" />
         <option value="Class" />
       </list>
     </option>
@@ -1197,8 +1224,8 @@
       <recent name="$PROJECT_DIR$/mybatis" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MybatisplusApplicationTests.selectOne">
-    <configuration name="MybatisplusApplicationTests.selectCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MybatisplusUpdateTests.updateByWrapper2">
+    <configuration name="MybatisplusSelectTests.selectMapsPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatisplus" />
       <extension name="coverage">
         <pattern>
@@ -1207,14 +1234,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.zq" />
-      <option name="MAIN_CLASS_NAME" value="com.zq.MybatisplusApplicationTests" />
-      <option name="METHOD_NAME" value="selectCount" />
+      <option name="MAIN_CLASS_NAME" value="com.zq.MybatisplusSelectTests" />
+      <option name="METHOD_NAME" value="selectMapsPage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisplusApplicationTests.selectMaps1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MybatisplusSelectTests.selectMyPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatisplus" />
       <extension name="coverage">
         <pattern>
@@ -1223,14 +1250,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.zq" />
-      <option name="MAIN_CLASS_NAME" value="com.zq.MybatisplusApplicationTests" />
-      <option name="METHOD_NAME" value="selectMaps1" />
+      <option name="MAIN_CLASS_NAME" value="com.zq.MybatisplusSelectTests" />
+      <option name="METHOD_NAME" value="selectMyPage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisplusApplicationTests.selectMaps2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MybatisplusUpdateTests.updateById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatisplus" />
       <extension name="coverage">
         <pattern>
@@ -1239,14 +1266,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.zq" />
-      <option name="MAIN_CLASS_NAME" value="com.zq.MybatisplusApplicationTests" />
-      <option name="METHOD_NAME" value="selectMaps2" />
+      <option name="MAIN_CLASS_NAME" value="com.zq.MybatisplusUpdateTests" />
+      <option name="METHOD_NAME" value="updateById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisplusApplicationTests.selectObjs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MybatisplusUpdateTests.updateByWrapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatisplus" />
       <extension name="coverage">
         <pattern>
@@ -1255,14 +1282,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.zq" />
-      <option name="MAIN_CLASS_NAME" value="com.zq.MybatisplusApplicationTests" />
-      <option name="METHOD_NAME" value="selectObjs" />
+      <option name="MAIN_CLASS_NAME" value="com.zq.MybatisplusUpdateTests" />
+      <option name="METHOD_NAME" value="updateByWrapper" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisplusApplicationTests.selectOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MybatisplusUpdateTests.updateByWrapper2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatisplus" />
       <extension name="coverage">
         <pattern>
@@ -1271,8 +1298,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.zq" />
-      <option name="MAIN_CLASS_NAME" value="com.zq.MybatisplusApplicationTests" />
-      <option name="METHOD_NAME" value="selectOne" />
+      <option name="MAIN_CLASS_NAME" value="com.zq.MybatisplusUpdateTests" />
+      <option name="METHOD_NAME" value="updateByWrapper2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -1294,11 +1321,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MybatisplusApplicationTests.selectOne" />
-        <item itemvalue="JUnit.MybatisplusApplicationTests.selectCount" />
-        <item itemvalue="JUnit.MybatisplusApplicationTests.selectObjs" />
-        <item itemvalue="JUnit.MybatisplusApplicationTests.selectMaps2" />
-        <item itemvalue="JUnit.MybatisplusApplicationTests.selectMaps1" />
+        <item itemvalue="JUnit.MybatisplusUpdateTests.updateByWrapper2" />
+        <item itemvalue="JUnit.MybatisplusUpdateTests.updateByWrapper" />
+        <item itemvalue="JUnit.MybatisplusUpdateTests.updateById" />
+        <item itemvalue="JUnit.MybatisplusSelectTests.selectMyPage" />
+        <item itemvalue="JUnit.MybatisplusSelectTests.selectMapsPage" />
       </list>
     </recent_temporary>
   </component>
@@ -1316,7 +1343,9 @@
       <workItem from="1642244120583" duration="65000" />
       <workItem from="1642247977340" duration="4605000" />
       <workItem from="1642384386773" duration="1568000" />
-      <workItem from="1642598599239" duration="18838000" />
+      <workItem from="1642598599239" duration="31228000" />
+      <workItem from="1643297968954" duration="8825000" />
+      <workItem from="1644397346575" duration="11495000" />
     </task>
     <servers />
   </component>
@@ -1331,30 +1360,38 @@
       <screen x="0" y="23" width="1792" height="1059" />
     </state>
     <state x="496" y="218" key="#Project_Structure/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642242185039" />
-    <state width="1750" height="328" key="GridCell.Tab.0.bottom" timestamp="1642944318287">
-      <screen x="0" y="23" width="1792" height="1059" />
+    <state width="1750" height="293" key="GridCell.Tab.0.bottom" timestamp="1644663006414">
+      <screen x="0" y="23" width="1792" height="1066" />
     </state>
-    <state width="1878" height="196" key="GridCell.Tab.0.bottom/0.23.1792.1059/-1920.-414.1920.1057@-1920.-414.1920.1057" timestamp="1642855747206" />
+    <state width="1878" height="420" key="GridCell.Tab.0.bottom/0.23.1792.1059/-1920.-414.1920.1057@-1920.-414.1920.1057" timestamp="1643094437579" />
     <state width="1750" height="383" key="GridCell.Tab.0.bottom/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642244184868" />
     <state width="1750" height="328" key="GridCell.Tab.0.bottom/0.23.1792.1059@0.23.1792.1059" timestamp="1642944318287" />
-    <state width="1750" height="328" key="GridCell.Tab.0.center" timestamp="1642944318286">
-      <screen x="0" y="23" width="1792" height="1059" />
+    <state width="1750" height="293" key="GridCell.Tab.0.bottom/0.23.1792.1066/-1920.-471.1920.1057@0.23.1792.1066" timestamp="1644663006414" />
+    <state width="1878" height="479" key="GridCell.Tab.0.bottom/0.23.1792.1097/-1920.-471.1920.1057@-1920.-471.1920.1057" timestamp="1643107499727" />
+    <state width="1750" height="293" key="GridCell.Tab.0.center" timestamp="1644663006414">
+      <screen x="0" y="23" width="1792" height="1066" />
     </state>
-    <state width="1878" height="196" key="GridCell.Tab.0.center/0.23.1792.1059/-1920.-414.1920.1057@-1920.-414.1920.1057" timestamp="1642855747205" />
+    <state width="1878" height="420" key="GridCell.Tab.0.center/0.23.1792.1059/-1920.-414.1920.1057@-1920.-414.1920.1057" timestamp="1643094437578" />
     <state width="1750" height="383" key="GridCell.Tab.0.center/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642244184868" />
     <state width="1750" height="328" key="GridCell.Tab.0.center/0.23.1792.1059@0.23.1792.1059" timestamp="1642944318286" />
-    <state width="1750" height="328" key="GridCell.Tab.0.left" timestamp="1642944318286">
-      <screen x="0" y="23" width="1792" height="1059" />
+    <state width="1750" height="293" key="GridCell.Tab.0.center/0.23.1792.1066/-1920.-471.1920.1057@0.23.1792.1066" timestamp="1644663006414" />
+    <state width="1878" height="479" key="GridCell.Tab.0.center/0.23.1792.1097/-1920.-471.1920.1057@-1920.-471.1920.1057" timestamp="1643107499726" />
+    <state width="1750" height="293" key="GridCell.Tab.0.left" timestamp="1644663006414">
+      <screen x="0" y="23" width="1792" height="1066" />
     </state>
-    <state width="1878" height="196" key="GridCell.Tab.0.left/0.23.1792.1059/-1920.-414.1920.1057@-1920.-414.1920.1057" timestamp="1642855747205" />
+    <state width="1878" height="420" key="GridCell.Tab.0.left/0.23.1792.1059/-1920.-414.1920.1057@-1920.-414.1920.1057" timestamp="1643094437577" />
     <state width="1750" height="383" key="GridCell.Tab.0.left/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642244184867" />
     <state width="1750" height="328" key="GridCell.Tab.0.left/0.23.1792.1059@0.23.1792.1059" timestamp="1642944318286" />
-    <state width="1750" height="328" key="GridCell.Tab.0.right" timestamp="1642944318287">
-      <screen x="0" y="23" width="1792" height="1059" />
+    <state width="1750" height="293" key="GridCell.Tab.0.left/0.23.1792.1066/-1920.-471.1920.1057@0.23.1792.1066" timestamp="1644663006414" />
+    <state width="1878" height="479" key="GridCell.Tab.0.left/0.23.1792.1097/-1920.-471.1920.1057@-1920.-471.1920.1057" timestamp="1643107499726" />
+    <state width="1750" height="293" key="GridCell.Tab.0.right" timestamp="1644663006414">
+      <screen x="0" y="23" width="1792" height="1066" />
     </state>
-    <state width="1878" height="196" key="GridCell.Tab.0.right/0.23.1792.1059/-1920.-414.1920.1057@-1920.-414.1920.1057" timestamp="1642855747206" />
+    <state width="1878" height="420" key="GridCell.Tab.0.right/0.23.1792.1059/-1920.-414.1920.1057@-1920.-414.1920.1057" timestamp="1643094437579" />
     <state width="1750" height="383" key="GridCell.Tab.0.right/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642244184868" />
     <state width="1750" height="328" key="GridCell.Tab.0.right/0.23.1792.1059@0.23.1792.1059" timestamp="1642944318287" />
+    <state width="1750" height="293" key="GridCell.Tab.0.right/0.23.1792.1066/-1920.-471.1920.1057@0.23.1792.1066" timestamp="1644663006414" />
+    <state width="1878" height="479" key="GridCell.Tab.0.right/0.23.1792.1097/-1920.-471.1920.1057@-1920.-471.1920.1057" timestamp="1643107499726" />
     <state x="-1509" y="-303" key="SettingsEditor" timestamp="1642847613929">
       <screen x="-1920" y="-414" width="1920" height="1057" />
     </state>
@@ -1364,6 +1401,10 @@
       <screen x="-1920" y="-414" width="1920" height="1057" />
     </state>
     <state x="-1058" y="-109" key="com.intellij.ide.util.TipDialog/0.23.1792.1059/-1920.-414.1920.1057@-1920.-414.1920.1057" timestamp="1642384408235" />
+    <state x="442" y="174" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1644658288313">
+      <screen x="0" y="23" width="1792" height="1066" />
+    </state>
+    <state x="442" y="174" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1792.1066/-1920.-471.1920.1057@0.23.1792.1066" timestamp="1644658288313" />
     <state x="-842" y="-126" key="extract.method.dialog" timestamp="1642847300203">
       <screen x="-1920" y="-414" width="1920" height="1057" />
     </state>
@@ -1376,5 +1417,9 @@
       <screen x="0" y="23" width="1792" height="1059" />
     </state>
     <state x="273" y="175" key="new project wizard/0.23.1792.1059/-1920.-414.1920.1057@0.23.1792.1059" timestamp="1642242880109" />
+    <state x="-1295" y="0" key="run.anything.popup" timestamp="1643104664029">
+      <screen x="-1920" y="-471" width="1920" height="1057" />
+    </state>
+    <state x="-1295" y="0" key="run.anything.popup/0.23.1792.1097/-1920.-471.1920.1057@-1920.-471.1920.1057" timestamp="1643104664029" />
   </component>
 </project>

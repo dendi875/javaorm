@@ -1,12 +1,14 @@
 package com.zq;
 
-import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.baomidou.mybatisplus.extension.conditions.query.LambdaQueryChainWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zq.entity.User;
 import com.zq.mapper.UserMapper;
-import org.assertj.core.internal.LongArrays;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +24,7 @@ import java.util.Map;
 @SpringBootTest
 // 增加运行器
 @RunWith(SpringRunner.class)
-class MybatisplusApplicationTests {
+class MybatisplusSelectTests {
 
 	@Autowired
 	private UserMapper userMapper;
@@ -84,7 +86,7 @@ class MybatisplusApplicationTests {
 
 	/*
 	 * 1、名字中包含雨并且年龄小于40
-	 * name like '%雨%' and age<40
+	 * name like '%红%' and age<40
 	 * 条件构造器，两种方法
 	 * 方法一. QueryWrapper<T> 泛型实参是实体类
 	 * 方法二. 使用 Wrappers 的这个工具类，调用 query 方法
@@ -100,8 +102,8 @@ class MybatisplusApplicationTests {
 	}
 
 	/**
-	 *  名字中包含雨年并且龄大于等于20且小于等于40并且email不为空
-	 *  name like '%雨%' and age between 20 and 40 and email is not null
+	 *  名字中包含小并且龄大于等于20且小于等于40并且email不为空
+	 *  name like '%小%' and age between 20 and 40 and email is not null
 	 */
 	@Test
 	public void setUserMapper2() {
@@ -114,7 +116,7 @@ class MybatisplusApplicationTests {
 
 	/**
 	 * 名字为王姓或者年龄大于等于25，按照年龄降序排列，年龄相同按照id升序排列
-	 *  name like '王%' or age>=25 order by age desc,id asc
+	 *  name like '小%' or age>=25 order by age desc,id asc
 	 */
 	@Test
 	public void setUserMapper3() {
@@ -143,7 +145,7 @@ class MybatisplusApplicationTests {
 
 	/*
 	 * 名字为王姓并且（年龄小于40或邮箱不为空）
-	 * name like '王%' and (age<40 or email is not null)
+	 * name like '小%' and (age<40 or email is not null)
 	 */
 	@Test
 	public void setUserMapper5() {
@@ -157,7 +159,7 @@ class MybatisplusApplicationTests {
 
 	/*
 	 * 名字为王姓或者（年龄小于40并且年龄大于20并且邮箱不为空）
-	 * name like '王%' or (age<40 and age>20 and email is not null)
+	 * name like '小%' or (age<40 and age>20 and email is not null)
 	 */
 	@Test
 	public void setUserMapper6() {
@@ -326,7 +328,7 @@ class MybatisplusApplicationTests {
 	 * 使用场景1：不需要返回数据库全部字段，如果使用 selectList，则没有返回的字段会被设置成 null
 	 */
 	@Test
-	public void selectMaps1() {
+	public void selectByWrapperMaps1() {
 		QueryWrapper<User> queryWrapper = new QueryWrapper<>();
 		queryWrapper.select("id", "name").eq("age", 31);
 		List<Map<String, Object>> maps = userMapper.selectMaps(queryWrapper);
@@ -349,7 +351,7 @@ class MybatisplusApplicationTests {
 	 *
 	 */
 	@Test
-	public void selectMaps2() {
+	public void selectByWrapperMaps2() {
 		QueryWrapper<User> queryWrapper = new QueryWrapper<>();
 		queryWrapper.select("avg(age) avg_age", "min(age) min_age", "max(age) max_age")
 				.groupBy("manager_id")
@@ -363,7 +365,7 @@ class MybatisplusApplicationTests {
 	 * 只返回第一列的值
 	 */
 	@Test
-	public void selectObjs() {
+	public void selectByWrapperObjs() {
 		QueryWrapper<User> queryWrapper = new QueryWrapper<>();
 		queryWrapper.like("name", "红");
 
@@ -376,7 +378,7 @@ class MybatisplusApplicationTests {
 	 * 查询总记录数
 	 */
 	@Test
-	public void selectCount() {
+	public void selectByWrapperCount() {
 		QueryWrapper<User> queryWrapper = new QueryWrapper<>();
 		queryWrapper.like("name", "红");
 
@@ -388,11 +390,161 @@ class MybatisplusApplicationTests {
 	 * 预期只返回一条记录的
 	 */
 	@Test
-	public void selectOne() {
+	public void selectByWrapperOne() {
 		QueryWrapper<User> queryWrapper = new QueryWrapper<>();
 		queryWrapper.eq("name", "小张");
 
 		User user = userMapper.selectOne(queryWrapper);
 		System.out.println(user);
+	}
+
+	/**
+	 * Lambda 条件构建器，优点：防止误写字段名
+	 *
+	 * 创建方式有三种：
+	 * LambdaQueryWrapper<User> lambdaQueryWrapper1 = new LambdaQueryWrapper<>();
+	 * LambdaQueryWrapper<User> lambdaQueryWrapper2 = new QueryWrapper<User>().lambda();
+	 * LambdaQueryWrapper<User> lambdaQueryWrapper3 = Wrappers.<User>lambdaQuery();
+	 *
+	 *
+	 * 方法引用四种形式
+	 * 1. 类名::静态方法名
+	 * 2. 对象::实例方法名
+	 * 3. 类名::实例方法名    第一个参数来调用实例方法，其余参数作为方法的参数传递进去
+	 * 4. 类名::new
+	 */
+	@Test
+	public void selectLambda() {
+		LambdaQueryWrapper<User> lambdaQueryWrapper = new LambdaQueryWrapper<>();
+
+		// where name '%红%' and age < 31
+		lambdaQueryWrapper.like(User::getRealName, "红").le(User::getAge, 31);
+
+		List<User> users = userMapper.selectList(lambdaQueryWrapper);
+
+		users.forEach(System.out::println);	// 对象::实例方法名
+	}
+
+	/**
+	 * 名字为王姓并且（年龄小于40 或 邮箱不为空）
+	 * name like '王%' and (age<31 or email is not null)
+	 */
+	@Test
+	public void selectLambda2() {
+		LambdaQueryWrapper<User> lambdaQueryWrapper = new LambdaQueryWrapper<>();
+
+		lambdaQueryWrapper.likeRight(User::getRealName, "小").and(lqw -> lqw.lt(User::getAge, 31).or().isNotNull(User::getEmail));
+
+		List<User> users = userMapper.selectList(lambdaQueryWrapper);
+		users.forEach(System.out::println);
+	}
+
+	/**
+	 * 名字为王姓并且（年龄小于40 或 邮箱不为空）
+	 * name like '小%' and (age<31 or email is not null)
+	 */
+	@Test
+	public void selectLambda3() {
+		// 泛型类，泛型构造器
+		List<User> users = new LambdaQueryChainWrapper<User>(userMapper)
+				.like(User::getRealName, "小")
+				.and(lqw -> lqw.lt(User::getAge, 31).or().isNotNull(User::getEmail))
+				.list();
+
+		users.forEach(System.out::println);
+	}
+
+	/**
+	 * 有时候只使用条件构造器不能满足我们的需求，这只我们要使用自定义 SQL 又要使用条件构造器
+	 * 使用条件构造器的自定义 SQL
+	 */
+	@Test
+	public void selectAllCustomize()
+	{
+		LambdaQueryWrapper<User> lambdaQueryWrapper = Wrappers.<User>lambdaQuery();
+		lambdaQueryWrapper.select(User::getId, User::getRealName, User::getAge).like(User::getRealName, "红");
+
+		List<User> users = userMapper.selectAll(lambdaQueryWrapper);
+		users.forEach(System.out::println);
+	}
+
+	/**
+	 * 使用条件构造器的自定义 SQL
+	 */
+	@Test
+	public void selectAllCustomize2()
+	{
+		LambdaQueryWrapper<User> lambdaQueryWrapper = Wrappers.<User>lambdaQuery();
+		lambdaQueryWrapper.select(User::getId, User::getRealName, User::getAge).like(User::getRealName, "红");
+
+		List<User> users = userMapper.selectAll2(lambdaQueryWrapper);
+		users.forEach(System.out::println);
+	}
+
+	/**
+	 * mybatis 提供的是内存分页，它先把数据全查询出来然后全部加载到内存中，
+	 * mp 提供了物理分页的插件，解决上述问题，既然是插件，肯定要配置
+	 *
+	 * BaseMapper 中提供了两个分页方法 selectPage  selectMpsPage
+	 *
+	 * 还有一个 IPage 接口提供了获取分页信息的方法（获取总记录数、总页数、当前页、每页多少条）
+	 * IPage 还有一个实现类  Page
+	 *
+	 * selectPage 方法就需要两个参数，一个是 IPage 的实现类，加一个 Wrapper 类对象
+	 */
+	@Test
+	public void selectPage() {
+		LambdaQueryWrapper<User> lambdaQueryWrapper = Wrappers.<User>lambdaQuery();// 在调用方法的前面加入 <实参> 来显式指定泛型方法类型
+		lambdaQueryWrapper.like(User::getRealName, "小").lt(User::getAge, 40);
+
+		Page<User> page = new Page<User>(1, 2, true);
+		IPage<User> iPage = userMapper.selectPage(page, lambdaQueryWrapper);
+
+		System.out.println("总记录数：" + iPage.getTotal());
+		System.out.println("总页数：" + iPage.getPages());
+		System.out.println("每页多少条：" + iPage.getSize());
+		System.out.println("当前页：" + iPage.getCurrent());
+
+		List<User> users = iPage.getRecords();
+		users.forEach(System.out::println);
+	}
+
+	/**
+	 * 第二种使用  selectMapsPage，如果每一个参数是 Page<User> page = new Page<User>(1, 2);，此时 page 会报错
+	 * 因为新版 3.4.1 之后，给他设定了具体类型，我们需要把  page 转成对应的类型 IPage<Map<String, Object>>
+	 */
+	@Test
+	public void selectMapsPage() {
+		LambdaQueryWrapper<User> lambdaQueryWrapper = Wrappers.<User>lambdaQuery();
+		lambdaQueryWrapper.like(User::getRealName, "小").lt(User::getAge, 40);
+
+		Page<Map<String, Object>> page = new Page<>(1, 2);
+		Page<Map<String, Object>> iPage = userMapper.selectMapsPage(page, lambdaQueryWrapper);
+
+		System.out.println("总记录数：" + iPage.getTotal());
+		System.out.println("总页数：" + iPage.getPages());
+		System.out.println("每页多少条：" + iPage.getSize());
+		System.out.println("当前页：" + iPage.getCurrent());
+
+		List<Map<String, Object>> records = iPage.getRecords();
+
+		records.forEach(System.out::println);
+	}
+
+	@Test
+	public void selectMyPage() {
+		LambdaQueryWrapper<User> lambdaQueryWrapper = Wrappers.<User>lambdaQuery();
+		lambdaQueryWrapper.like(User::getRealName, "小").lt(User::getAge, 40);
+
+		Page<User> page = new Page<>(1, 2);
+
+		IPage<User> iPage = userMapper.selectMyPage(page, lambdaQueryWrapper);
+
+		System.out.println("总记录数：" + iPage.getTotal());
+		System.out.println("总页数：" + iPage.getPages());
+		System.out.println("每页多少条：" + iPage.getSize());
+		System.out.println("当前页：" + iPage.getCurrent());
+
+		iPage.getRecords().forEach(System.out::println);
 	}
 }
