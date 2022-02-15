@@ -35,23 +35,6 @@ class MybatisplusSelectTests {
 		users.forEach(System.out::println);
 	}
 
-	@Test
-	public void insert() {
-		User user = new User();
-		user.setRealName("小红1");
-		user.setAge(32);
-		user.setEmail("32@qq.com");
-		user.setManagerId(1087982257332887553L);
-		user.setCreateTime(LocalDateTime.now());
-		user.setRemark("我是备注数据库中没有这个字段");
-
-		/**
-		 * 默认ID是用雪花算法生成的，数据库中是 manager_id
-		 */
-		int rows = userMapper.insert(user);
-		System.out.println("受影响的行数：" + rows);
-	}
-
 	/**
 	 * 根据 ID 查询
 	 */
@@ -440,6 +423,8 @@ class MybatisplusSelectTests {
 	}
 
 	/**
+	 * Lambda 链式调用方法
+	 *
 	 * 名字为王姓并且（年龄小于40 或 邮箱不为空）
 	 * name like '小%' and (age<31 or email is not null)
 	 */

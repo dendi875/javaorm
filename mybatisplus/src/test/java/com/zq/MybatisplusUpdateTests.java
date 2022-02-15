@@ -3,6 +3,7 @@ package com.zq;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.baomidou.mybatisplus.extension.conditions.update.LambdaUpdateChainWrapper;
 import com.zq.entity.User;
 import com.zq.mapper.UserMapper;
 import org.junit.Test;
@@ -86,5 +87,48 @@ public class MybatisplusUpdateTests {
         int rows = userMapper.update(setUser, updateWrapper);
         System.out.println("受影响的记录数为：" + rows);
 
+    }
+
+    /**
+     * 条件构造器中 set 方法的使用
+     *
+     * 不创建实体传入，直接在条件中使用 set 方法
+     */
+    @Test
+    public void updateByWrapper3() {
+        UpdateWrapper<User> updateWrapper = Wrappers.<User>update();
+
+        updateWrapper.eq("name", "刘红雨").set("age", 33).set("email", "");
+
+        int rows = userMapper.update(null, updateWrapper);
+        System.out.println("受影响的记录数为：" + rows);
+    }
+
+    /**
+     * 使用 Lambda 语法更新
+     */
+    @Test
+    public void updateByLambda() {
+        LambdaUpdateWrapper<User> lambdaUpdateWrapper = Wrappers.<User>lambdaUpdate();
+
+        lambdaUpdateWrapper.eq(User::getRealName, "小张").set(User::getRealName, "小小张");
+
+        int rows = userMapper.update(null, lambdaUpdateWrapper);
+
+        System.out.println("受影响的记录数为：" + rows);
+    }
+
+    /**
+     * 使用 Lambda 链式调用来更新
+     */
+    @Test
+    public void updateByLambdaChain() {
+        boolean update = new LambdaUpdateChainWrapper<User>(userMapper)
+                .eq(User::getRealName, "小红1")
+                .eq(User::getAge, 32)
+                .set(User::getEmail, "小红1@qq.com")
+                .update();
+
+        System.out.println("更新成功：" + update);
     }
 }
