@@ -11,6 +11,9 @@ import lombok.Data;
 
 import java.time.LocalDateTime;
 
+/**
+ * 需要操作的实体
+ */
 @Data
 @TableName("mp_user")
 public class User {

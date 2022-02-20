@@ -24,7 +24,7 @@ import java.util.Map;
 @SpringBootTest
 // 增加运行器
 @RunWith(SpringRunner.class)
-class MybatisplusSelectTests {
+class MapperSelectTests {
 
 	@Autowired
 	private UserMapper userMapper;

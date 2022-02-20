@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 // 增加运行器
 @RunWith(SpringRunner.class)
-public class MybatisplusUpdateTests {
+public class MapperUpdateTests {
 
     @Autowired
     private UserMapper userMapper;

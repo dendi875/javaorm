@@ -1,3 +1,6 @@
+## 配置
+1. config-location 与 configuration 配置不能同时出现
+
 ## 通用 Service
 
 1. 新建 service 包

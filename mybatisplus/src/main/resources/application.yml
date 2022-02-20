@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: mybatisplus
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://www.myvbox.com:3306/mp?useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+
+
+logging:
+    level:
+      root: warn
+      com.zq.mapper: trace
+# 设置日志的输出格式 %m日志内容 %n换行
+    pattern:
+      console: '%p%m%n'
+
+mybatis-plus:
+    mapper-locations: classpath*:/mapper/**/*.xml
+    global-config:
+      db-config:
+        insert-strategy: not_null
+  #config-location: classpath:mybatis-config.xml
+    configuration:
+      map-underscore-to-camel-case: true
+
+

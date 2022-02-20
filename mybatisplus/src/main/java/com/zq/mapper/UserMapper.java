@@ -12,7 +12,7 @@ import org.apache.ibatis.annotations.Select;
 import java.util.List;
 
 /**
- *  BaseMapper 有一个泛型，就是你要操作的实体类
+ *  BaseMapper 有一个泛型，就是你要操作的实体类，需要操作的实体 mapper
  */
 public interface UserMapper extends BaseMapper<User> {
     /**

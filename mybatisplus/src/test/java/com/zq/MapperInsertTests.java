@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 @SpringBootTest
 // 增加运行器
 @RunWith(SpringRunner.class)
-public class MybatisplusInsertTests {
+public class MapperInsertTests {
 
     @Autowired
     private UserMapper userMapper;
@@ -21,7 +21,7 @@ public class MybatisplusInsertTests {
     @Test
     public void insert() {
         User user = new User();
-        user.setRealName("小黄1");
+        user.setRealName("小黄11111");
         user.setAge(32);
         user.setEmail("32@qq.com");
         user.setManagerId(1087982257332887553L);

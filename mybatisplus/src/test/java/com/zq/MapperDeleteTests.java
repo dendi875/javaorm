@@ -18,7 +18,7 @@ import java.util.Map;
 @SpringBootTest
 // 增加运行器
 @RunWith(SpringRunner.class)
-public class MybatisplusDeleteTests {
+public class MapperDeleteTests {
 
     @Autowired
     private UserMapper userMapper;
