@@ -2,7 +2,6 @@
 1. config-location 与 configuration 配置不能同时出现
 
 ## 通用 Service
-
 1. 新建 service 包
 2. 新建接口 UserService 继承 `IService<T>`，泛型写所对应的实体类
 3. 新建 service 的实现包 impl

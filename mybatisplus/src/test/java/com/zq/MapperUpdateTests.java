@@ -55,7 +55,7 @@ public class MapperUpdateTests {
      * UPDATE mp_user SET age=?, email=? WHERE (name = ? AND age = ?)
      */
     @Test
-    public void updateByWrapper() {
+    public void updateByLambdaUpdateWrapper() {
         LambdaUpdateWrapper<User> lambdaUpdateWrapper = Wrappers.<User>lambdaUpdate();
 
         lambdaUpdateWrapper.eq(User::getRealName, "王天风").eq(User::getAge, 25);
@@ -69,12 +69,26 @@ public class MapperUpdateTests {
     }
 
     /**
+     * 使用 Lambda 语法更新0
+     */
+    @Test
+    public void updateByLambdaUpdateWrapper2() {
+        LambdaUpdateWrapper<User> lambdaUpdateWrapper = Wrappers.<User>lambdaUpdate();
+
+        lambdaUpdateWrapper.eq(User::getRealName, "小张").set(User::getRealName, "小小张");
+
+        int rows = userMapper.update(null, lambdaUpdateWrapper);
+
+        System.out.println("受影响的记录数为：" + rows);
+    }
+
+    /**
      * 直接把实体对象传进去作为 where 条件
      *
      * UPDATE mp_user SET age=? WHERE name<>? AND (age = ?)
      */
     @Test
-    public void updateByWrapper2() {
+    public void updateByUpdateWrapper() {
         User whereUser = new User();
         whereUser.setRealName("李艺伟1");
 
@@ -95,7 +109,7 @@ public class MapperUpdateTests {
      * 不创建实体传入，直接在条件中使用 set 方法
      */
     @Test
-    public void updateByWrapper3() {
+    public void updateByUpdateWrapper2() {
         UpdateWrapper<User> updateWrapper = Wrappers.<User>update();
 
         updateWrapper.eq("name", "刘红雨").set("age", 33).set("email", "");
@@ -104,28 +118,16 @@ public class MapperUpdateTests {
         System.out.println("受影响的记录数为：" + rows);
     }
 
-    /**
-     * 使用 Lambda 语法更新
-     */
-    @Test
-    public void updateByLambda() {
-        LambdaUpdateWrapper<User> lambdaUpdateWrapper = Wrappers.<User>lambdaUpdate();
 
-        lambdaUpdateWrapper.eq(User::getRealName, "小张").set(User::getRealName, "小小张");
-
-        int rows = userMapper.update(null, lambdaUpdateWrapper);
-
-        System.out.println("受影响的记录数为：" + rows);
-    }
 
     /**
      * 使用 Lambda 链式调用来更新
      */
     @Test
-    public void updateByLambdaChain() {
+    public void updateByLambdaUpdateChainWrapper() {
         boolean update = new LambdaUpdateChainWrapper<User>(userMapper)
                 .eq(User::getRealName, "小红1")
-                .eq(User::getAge, 32)
+                .eq(User::getAge, 132)
                 .set(User::getEmail, "小红1@qq.com")
                 .update();
 

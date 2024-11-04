@@ -63,6 +63,8 @@
      多参数的完整的语法格式：
        https://mybatis.org/mybatis-3/zh/sqlmap-xml.html#Parameters
      #{property,javaType=java中的数据类型名,jdbcType=数据类型名}
+
+     MyBatis 支持的 JDBC 数据类型：https://mybatis.org/mybatis-3/zh/sqlmap-xml.html
     -->
     <select id="selectMultiStudent2" resultType="com.zq.entity.Student">
         select * from student where
@@ -311,4 +313,6 @@ resultType: 它只在 select 语句中使用，告诉 mybatis，执行 sql  语�
 
 
 #{id}：点位符，表示从 java 程序中传入过来的数据
+
+${tableName}
 -->

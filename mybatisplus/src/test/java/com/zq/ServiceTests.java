@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.jws.soap.SOAPBinding;
 import java.util.Arrays;
 import java.util.List;
 
@@ -25,6 +24,13 @@ public class ServiceTests {
     public void getOne() {
         User user = userService.getOne(Wrappers.<User>lambdaQuery().gt(User::getAge, 30), false);
         System.out.println(user);
+    }
+
+    @Test
+    public void listByIds() {
+        List<Long> ids = Arrays.asList(1087982257332887553L, 1088248166370832385L);
+        List<User> users = userService.listByIds(ids);
+        users.forEach(System.out::println);
     }
 
     @Test
@@ -80,4 +86,6 @@ public class ServiceTests {
 
         System.out.println("是否成功：" + remove);
     }
+
+
 }

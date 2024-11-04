@@ -15,7 +15,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -29,12 +28,6 @@ class MapperSelectTests {
 	@Autowired
 	private UserMapper userMapper;
 
-	@Test
-	public void selectAll() {
-		List<User> users = userMapper.selectList(null);
-		users.forEach(System.out::println);
-	}
-
 	/**
 	 * 根据 ID 查询
 	 */
@@ -45,12 +38,30 @@ class MapperSelectTests {
 	}
 
 	/**
+	 * 预期只返回一条记录的
+	 */
+	@Test
+	public void selectOne() {
+		QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+		queryWrapper.eq("name", "小张");
+
+		User user = userMapper.selectOne(queryWrapper);
+		System.out.println(user);
+	}
+
+	/**
 	 * 查询（根据ID 批量查询）
 	 */
 	@Test
 	public void selectBatchIds() {
 		List<Long> idList = Arrays.asList(1087982257332887553L, 1088248166370832385L, 1088250446457389058L);
 		List<User> users = userMapper.selectBatchIds(idList);
+		users.forEach(System.out::println);
+	}
+
+	@Test
+	public void selectList() {
+		List<User> users = userMapper.selectList(null);
 		users.forEach(System.out::println);
 	}
 
@@ -367,18 +378,6 @@ class MapperSelectTests {
 
 		Integer count = userMapper.selectCount(queryWrapper);
 		System.out.println(count);
-	}
-
-	/**
-	 * 预期只返回一条记录的
-	 */
-	@Test
-	public void selectByWrapperOne() {
-		QueryWrapper<User> queryWrapper = new QueryWrapper<>();
-		queryWrapper.eq("name", "小张");
-
-		User user = userMapper.selectOne(queryWrapper);
-		System.out.println(user);
 	}
 
 	/**
